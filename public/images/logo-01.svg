@@ -1,5 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
-  <path fill="#93C5FD" d="M31.999 17.203h-5.732a9.065 9.065 0 0 0-9.065 9.065V32c7.902-.586 14.21-6.895 14.797-14.797Z"/>
-  <path fill="#3B82F6" d="M14.796 32v-5.732a9.065 9.065 0 0 0-9.065-9.065H0C.586 25.105 6.895 31.413 14.796 32ZM31.999 14.796C31.413 6.895 25.104.586 17.202 0v5.731a9.065 9.065 0 0 0 9.065 9.065H32Z"/>
-  <path fill="#93C5FD" d="M14.796 0C6.895.586.586 6.895 0 14.796h5.731a9.065 9.065 0 0 0 9.065-9.065V0Z"/>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 六边形线框 -->
+  <polygon points="250,55 418.8,152.5 418.8,347.5 250,445 81.2,347.5 81.2,152.5" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="round" stroke-opacity="0.9"/>
+  
+  <!-- TP 字母 -->
+  <g fill="none" stroke-width="48" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 145 185 L 215 185 M 180 185 L 180 315" stroke="#5BCEFA"/>
+    <path d="M 280 315 L 280 185 L 310 185 A 45 45 0 0 1 310 275 L 280 275" stroke="#F5A9B8"/>
+  </g>
 </svg>

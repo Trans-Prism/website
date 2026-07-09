@@ -1,0 +1,15 @@
+{
+	"mcpServers": {
+		"local_knowledge_base": {
+			"command": "python",
+			"args": [
+				"/Users/wenle/Desktop/Workspace/Trans_Prism/mcp_bridge_bge.py"
+			],
+			"env": {},
+			"disabled": false,
+			"alwaysAllow": [
+				"search_local_knowledge"
+			]
+		}
+	}
+}
