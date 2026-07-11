@@ -113,7 +113,7 @@ export default function FeaturesPlanet() {
   return (
     <section className="relative before:absolute before:inset-0 before:-z-20 before:bg-gray-900">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="py-12 md:py-20">
+        <div className="pt-12 md:pt-20 pb-4 md:pb-8">
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-16 text-center md:pb-20">
             <h2 className="text-3xl font-bold text-gray-200 md:text-4xl">

@@ -3,20 +3,25 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 z-30 w-full mix-blend-difference">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+    <header className="fixed top-0 z-30 w-full">
+      {/* iOS‑style 液态玻璃层 — 高透、强模糊、低饱和拉伸 */}
+      <div
+        className="absolute inset-0 border-b border-white/20 bg-white/15 shadow-[0_0.5px_1px_rgba(0,0,0,0.03)] backdrop-blur-[60px] backdrop-saturate-[1.4]"
+        aria-hidden="true"
+      />
+      <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex h-16 items-center justify-between gap-3">
           {/* Site branding — Logo + Text */}
           <div className="flex shrink-0 items-center gap-2">
             <Link href="/" className="flex items-center gap-2">
               <Image
-                src="/images/logo-01.svg"
+                src="/images/logo1.svg"
                 alt="Trans Prism"
                 width={28}
                 height={28}
                 className="shrink-0"
               />
-              <span className="text-xl font-bold tracking-tight text-white transition-opacity hover:opacity-70">
+              <span className="text-xl font-bold tracking-tight text-gray-900 transition-opacity hover:opacity-70">
                 Trans Prism
               </span>
             </Link>
@@ -25,10 +30,10 @@ export default function Header() {
           {/* Right side: GitHub icon + Download button */}
           <div className="flex items-center gap-4">
             <a
-              href="https://github.com"
+              href="https://github.com/Trans-Prism/Trans-Prism"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/70 transition-opacity hover:opacity-100"
+              className="text-gray-500 transition-opacity hover:text-gray-900"
               aria-label="GitHub"
             >
               <svg
@@ -43,16 +48,21 @@ export default function Header() {
 
             <Link
               href="/download"
-              className="inline-flex items-center gap-1.5 rounded-full bg-white/20 px-4 py-1.5 text-sm font-medium text-white backdrop-blur-sm transition-all hover:bg-white/30"
+              className="inline-flex items-center gap-1.5 rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-blue-700 hover:shadow-md active:scale-95"
             >
-              {/* Android icon */}
+              {/* Download icon */}
               <svg
                 className="h-4 w-4"
                 viewBox="0 0 24 24"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
-                <path d="M17.523 16.433a.61.61 0 01-.61.61h-.738a.61.61 0 01-.61-.61V9.97a.61.61 0 01.61-.61h.738a.61.61 0 01.61.61v6.463zm-8.666 0a.61.61 0 01-.61.61h-.738a.61.61 0 01-.61-.61V9.97a.61.61 0 01.61-.61h.738a.61.61 0 01.61.61v6.463zM8.076 6.53l1.08-1.872a.243.243 0 00-.087-.333.245.245 0 00-.334.087l-1.12 1.939a8.177 8.177 0 00-3.052 1.445.244.244 0 00-.025.342.245.245 0 00.342.024A7.33 7.33 0 018.076 6.53zm8.348 0l-1.08-1.872a.243.243 0 01.087-.333.245.245 0 01.334.087l1.12 1.939a8.177 8.177 0 013.052 1.445.244.244 0 01.025.342.245.245 0 01-.342.024A7.33 7.33 0 0016.424 6.53zM20.088 8.28a.488.488 0 00-.488-.488H4.4a.488.488 0 00-.488.488v8.212c0 .27.218.488.488.488h15.2a.488.488 0 00.488-.488V8.28zM3.125 17.135a.732.732 0 01-.732-.732v-6.46a.732.732 0 011.464 0v6.46a.732.732 0 01-.732.732zm17.75 0a.732.732 0 01-.732-.732v-6.46a.732.732 0 011.464 0v6.46a.732.732 0 01-.732.732z" />
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
               </svg>
               下载 Android 版
             </Link>

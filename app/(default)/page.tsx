@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Home - Simple",
-  description: "Page description",
+  title: "Trans Prism — 跨性别工具箱 · 安全 · 离线 · 开源",
+  description: "专为跨性别群体打造的极简、安全、双擎驱动的实用工具箱",
 };
 
 import Hero from "@/components/hero-home";

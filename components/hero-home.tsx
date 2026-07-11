@@ -211,7 +211,7 @@ export default function HeroHome() {
             </h1>
             <div className="mx-auto max-w-3xl">
               <p className="mb-8 text-lg text-gray-700">
-                跨性别知识图谱 · 安全 · 离线 · 开源
+                跨性别工具箱 · 安全 · 离线 · 开源
               </p>
             </div>
           </div>

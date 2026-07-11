@@ -2,7 +2,7 @@ export default function LargeTestimonial() {
   return (
     <section className="bg-gray-900">
       <div className="mx-auto max-w-2xl px-4 sm:px-6">
-        <div className="py-12 md:py-20">
+        <div className="pt-8 md:pt-12 pb-12 md:pb-20">
           <div className="space-y-3 text-center">
             <div className="relative inline-flex">
               <svg

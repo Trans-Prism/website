@@ -34,7 +34,9 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
+                  href="https://github.com/Trans-Prism/Trans-Prism"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   GitHub 仓库
                 </Link>
@@ -42,7 +44,9 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
+                  href="https://github.com/Trans-Prism/Trans-Prism/releases"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   更新日志
                 </Link>
@@ -50,53 +54,63 @@ export default function Footer({ border = false }: { border?: boolean }) {
             </ul>
           </div>
 
-          {/* 3rd block — 生态 */}
+          {/* 3rd block — 友情链接 */}
           <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h3 className="text-sm font-medium text-gray-800">生态</h3>
+            <h3 className="text-sm font-medium text-gray-800">友情链接</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
+                  href="https://www.transhelper.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  mtf.wiki
+                  TransHelper
                 </Link>
               </li>
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
+                  href="https://2345.lgbt"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  友善医疗名录
+                  2345.lgbt
                 </Link>
               </li>
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
+                  href="https://kitsumio.github.io/MioMtFWiki/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  本地 RAG 文档
+                  MioMtFWiki
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-gray-600 transition hover:text-gray-900"
+                  href="https://transcircle.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  TransCircle
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* 4th block — 透明度 */}
+          {/* 4th block — 关于 */}
           <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h3 className="text-sm font-medium text-gray-800">透明度</h3>
+            <h3 className="text-sm font-medium text-gray-800">关于</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
-                >
-                  隐私声明
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
+                  href="https://github.com/Trans-Prism/Trans-Prism/blob/main/LICENSE"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   开源协议
                 </Link>
@@ -104,7 +118,9 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="#0"
+                  href="https://github.com/Trans-Prism/Trans-Prism/issues"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   报告 Bug
                 </Link>
@@ -119,7 +135,9 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <li>
                 <Link
                   className="flex items-center justify-center text-blue-500 transition hover:text-blue-600"
-                  href="#0"
+                  href="https://github.com/Trans-Prism/Trans-Prism"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="GitHub"
                 >
                   <svg
@@ -137,14 +155,23 @@ export default function Footer({ border = false }: { border?: boolean }) {
       </div>
 
       {/* Big text */}
-      <div className="relative -mt-16 h-60 w-full" aria-hidden="true">
-        <div className="pointer-events-none absolute left-1/2 -z-10 -translate-x-1/2 text-center text-[348px] font-bold leading-none before:bg-linear-to-b before:from-gray-200 before:to-gray-100/30 before:to-80% before:bg-clip-text before:text-transparent before:content-['Simple'] after:absolute after:inset-0 after:bg-gray-300/70 after:bg-clip-text after:text-transparent after:mix-blend-darken after:content-['Simple'] after:[text-shadow:0_1px_0_white]"></div>
+      <div className="pointer-events-none relative -mt-8 h-40 w-full" aria-hidden="true">
+        <div className="pointer-events-none absolute left-1/2 -z-10 -translate-x-1/2 text-center mt-0 text-[190px] whitespace-nowrap font-bold leading-none before:bg-linear-to-b before:from-gray-200 before:to-gray-100/30 before:to-80% before:bg-clip-text before:text-transparent before:content-['Trans_Prism'] after:absolute after:inset-0 after:bg-gray-300/70 after:bg-clip-text after:text-transparent after:mix-blend-darken after:content-['Trans_Prism'] after:[text-shadow:0_1px_0_white]"></div>
         {/* Glow */}
         <div
           className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-2/3"
           aria-hidden="true"
         >
-          <div className="h-56 w-56 rounded-full border-[20px] border-blue-700 blur-[80px]"></div>
+          <div className="h-40 w-40 rounded-full border-[10px] border-blue-700 blur-[60px]"></div>
+        </div>
+      </div>
+
+      {/* Bottom bar */}
+      <div className="border-t border-gray-100">
+        <div className="mx-auto max-w-6xl px-4 py-4 sm:px-6">
+          <p className="text-center text-xs text-gray-400">
+            May you find your steady state.
+          </p>
         </div>
       </div>
     </footer>
