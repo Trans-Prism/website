@@ -14,9 +14,9 @@ export default function BusinessCategories() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="pb-12 md:pb-20">
           {/* Tab panels */}
-          <div className="relative flex h-[324px] items-center justify-center">
+          <div className="relative flex min-h-[324px] items-center justify-center">
             {/* Small blue dots */}
-            <div className="absolute -z-10">
+            <div className="absolute -z-10 max-md:hidden">
               <svg
                 className="fill-blue-500"
                 xmlns="http://www.w3.org/2000/svg"
@@ -38,88 +38,64 @@ export default function BusinessCategories() {
                 <circle cx={8} cy={33} r={1} />
                 <circle cx={1} cy={40} r={1} />
                 <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
+                  cx={1} cy={1} r={1}
                   transform="matrix(-1 0 0 1 164 7)"
                   fillOpacity="0.24"
                 />
                 <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
+                  cx={1} cy={1} r={1}
                   transform="matrix(-1 0 0 1 164 0)"
                   fillOpacity="0.16"
                 />
                 <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
+                  cx={1} cy={1} r={1}
                   transform="matrix(-1 0 0 1 164 14)"
                 />
                 <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
+                  cx={1} cy={1} r={1}
                   transform="matrix(-1 0 0 1 164 25)"
                   fillOpacity="0.64"
                 />
                 <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
+                  cx={1} cy={1} r={1}
                   transform="matrix(-1 0 0 1 164 32)"
                   fillOpacity="0.24"
                 />
                 <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
+                  cx={1} cy={1} r={1}
                   transform="matrix(-1 0 0 1 157 7)"
                 />
                 <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
+                  cx={1} cy={1} r={1}
                   transform="matrix(-1 0 0 1 157 14)"
                 />
                 <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
+                  cx={1} cy={1} r={1}
                   transform="matrix(-1 0 0 1 157 25)"
                   fillOpacity="0.24"
                 />
                 <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
+                  cx={1} cy={1} r={1}
                   transform="matrix(-1 0 0 1 150 14)"
                   fillOpacity="0.64"
                 />
                 <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
+                  cx={1} cy={1} r={1}
                   transform="matrix(-1 0 0 1 150 25)"
                   fillOpacity="0.16"
                 />
                 <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
+                  cx={1} cy={1} r={1}
                   transform="matrix(-1 0 0 1 157 32)"
                 />
                 <circle
-                  cx={1}
-                  cy={1}
-                  r={1}
+                  cx={1} cy={1} r={1}
                   transform="matrix(-1 0 0 1 164 39)"
                 />
               </svg>
             </div>
             {/* Blue glow */}
-            <div className="absolute -z-10">
+            <div className="absolute -z-10 max-md:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={432}
@@ -138,128 +114,149 @@ export default function BusinessCategories() {
                 <defs>
                   <filter
                     id="filter0_f_2044_9"
-                    x={0}
-                    y={0}
-                    width={432}
-                    height={160}
+                    x={0} y={0} width={432} height={160}
                     filterUnits="userSpaceOnUse"
                     colorInterpolationFilters="sRGB"
                   >
                     <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                    <feBlend
-                      mode="normal"
-                      in="SourceGraphic"
-                      in2="BackgroundImageFix"
-                      result="shape"
-                    />
-                    <feGaussianBlur
-                      stdDeviation={32}
-                      result="effect1_foregroundBlur_2044_9"
-                    />
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                    <feGaussianBlur stdDeviation={32} result="effect1_foregroundBlur_2044_9" />
                   </filter>
                 </defs>
               </svg>
             </div>
-            {/* Horizontal lines */}
-            <div className="absolute inset-x-0 top-0 -z-10 h-px bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply"></div>
-            <div className="absolute inset-x-0 bottom-0 -z-10 h-px bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply"></div>
-            <div className="absolute inset-x-[200px] top-1/2 -z-10 h-px bg-linear-to-r from-transparent via-blue-500/60 to-transparent mix-blend-multiply"></div>
-            <div className="absolute inset-x-0 top-1/2 -z-10 h-px -translate-y-[82px] bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply before:absolute before:inset-y-0 before:w-24 before:animate-[line_10s_ease-in-out_infinite_both] before:bg-linear-to-r before:via-blue-500"></div>
-            <div className="absolute inset-x-0 top-1/2 -z-10 h-px translate-y-[82px] bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply before:absolute before:inset-y-0 before:w-24 before:animate-[line_10s_ease-in-out_infinite_5s_both] before:bg-linear-to-r before:via-blue-500"></div>
-            {/* Diagonal lines */}
-            <div className="absolute inset-x-[300px] top-1/2 -z-10 h-px rotate-[20deg] bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply"></div>
-            <div className="absolute inset-x-[300px] top-1/2 -z-10 h-px -rotate-[20deg] bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply"></div>
-            {/* Vertical lines */}
-            <div className="absolute inset-y-0 left-1/2 -z-10 w-px -translate-x-[216px] bg-linear-to-b from-gray-200 to-transparent mix-blend-multiply"></div>
-            <div className="absolute inset-y-0 left-1/2 -z-10 w-px translate-x-[216px] bg-linear-to-t from-gray-200 to-transparent mix-blend-multiply"></div>
-            {/* Logos */}
-            <div className="absolute before:absolute before:-inset-3 before:animate-[spin_3s_linear_infinite] before:rounded-full before:border before:border-transparent before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] before:[background:conic-gradient(from_180deg,transparent,var(--color-blue-500))_border-box]">
-              <div className="animate-[breath_8s_ease-in-out_infinite_both]">
-                <div className="flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                  <Image
-                    className="relative"
-                    src={Logo01}
-                    width={80}
-                    height={80}
-                    alt="Logo 01"
-                  />
+            {/* Horizontal lines — desktop only */}
+            <div className="absolute inset-x-0 top-0 -z-10 h-px bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply max-md:hidden"></div>
+            <div className="absolute inset-x-0 bottom-0 -z-10 h-px bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply max-md:hidden"></div>
+            <div className="absolute inset-x-[200px] top-1/2 -z-10 h-px bg-linear-to-r from-transparent via-blue-500/60 to-transparent mix-blend-multiply max-md:hidden"></div>
+            <div className="absolute inset-x-0 top-1/2 -z-10 h-px -translate-y-[82px] bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply before:absolute before:inset-y-0 before:w-24 before:animate-[line_10s_ease-in-out_infinite_both] before:bg-linear-to-r before:via-blue-500 max-md:hidden"></div>
+            <div className="absolute inset-x-0 top-1/2 -z-10 h-px translate-y-[82px] bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply before:absolute before:inset-y-0 before:w-24 before:animate-[line_10s_ease-in-out_infinite_5s_both] before:bg-linear-to-r before:via-blue-500 max-md:hidden"></div>
+            {/* Diagonal lines — desktop only */}
+            <div className="absolute inset-x-[300px] top-1/2 -z-10 h-px rotate-[20deg] bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply max-md:hidden"></div>
+            <div className="absolute inset-x-[300px] top-1/2 -z-10 h-px -rotate-[20deg] bg-linear-to-r from-transparent via-gray-200 to-transparent mix-blend-multiply max-md:hidden"></div>
+            {/* Vertical lines — desktop only */}
+            <div className="absolute inset-y-0 left-1/2 -z-10 w-px -translate-x-[216px] bg-linear-to-b from-gray-200 to-transparent mix-blend-multiply max-md:hidden"></div>
+            <div className="absolute inset-y-0 left-1/2 -z-10 w-px translate-x-[216px] bg-linear-to-t from-gray-200 to-transparent mix-blend-multiply max-md:hidden"></div>
+
+            {/* ---- 桌面端：中心圆形布局 ---- */}
+            <div className="relative max-md:hidden">
+              <div className="before:absolute before:-inset-3 before:animate-[spin_3s_linear_infinite] before:rounded-full before:border before:border-transparent before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] before:[background:conic-gradient(from_180deg,transparent,var(--color-blue-500))_border-box]">
+                <div className="animate-[breath_8s_ease-in-out_infinite_both]">
+                  <div className="flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
+                    <Image className="relative" src={Logo01} width={80} height={80} alt="Logo 01" />
+                  </div>
                 </div>
+              </div>
+
+              <div className="relative flex flex-col">
+                <article className="flex h-full w-full items-center justify-center focus-visible:outline-hidden focus-visible:ring-3 focus-visible:ring-indigo-300">
+                  <div className="absolute -translate-x-[136px]">
+                    <div className="animate-[breath_7s_ease-in-out_3s_infinite_both]">
+                      <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
+                        <a href="https://github.com/Trans-Prism/Trans-Prism" target="_blank" rel="noopener noreferrer">
+                          <Image className="relative" src={Logo02} width={23} height={22} alt="Logo 02" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute translate-x-[136px]">
+                    <div className="animate-[breath_7s_ease-in-out_3.5s_infinite_both]">
+                      <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
+                        <a href="https://creativecommons.org" target="_blank" rel="noopener noreferrer">
+                          <Image className="relative" src={Logo03} width={22} height={22} alt="Logo 03" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute -translate-x-[216px] -translate-y-[82px]">
+                    <div className="animate-[breath_6s_ease-in-out_3.5s_infinite_both]">
+                      <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
+                        <a href="https://flutter.dev" target="_blank" rel="noopener noreferrer">
+                          <Image className="relative" src={Logo04} width={24} height={22} alt="Logo 04" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute -translate-y-[82px] translate-x-[216px]">
+                    <div className="animate-[breath_6s_ease-in-out_1.5s_infinite_both]">
+                      <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
+                        <a href="https://mtf.wiki" target="_blank" rel="noopener noreferrer">
+                          <Image className="relative" src={Logo05} width={25} height={25} alt="Logo 05" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute translate-x-[216px] translate-y-[82px]">
+                    <div className="animate-[breath_6s_ease-in-out_2s_infinite_both]">
+                      <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
+                        <span className="text-2xl leading-none">🏳️‍⚧️</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute -translate-x-[216px] translate-y-[82px]">
+                    <div className="animate-[breath_6s_ease-in-out_2.5s_infinite_both]">
+                      <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
+                        <a href="https://dart.dev" target="_blank" rel="noopener noreferrer">
+                          <Image className="relative" src={Logo07} width={25} height={25} alt="Logo 07" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute -translate-x-[292px] opacity-40">
+                    <div className="animate-[breath_6s_ease-in-out_2s_infinite_both]">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200/60 bg-white shadow-lg">
+                        <a href="https://www.cloudflare.com" target="_blank" rel="noopener noreferrer">
+                          <Image className="relative" src={Logo08} width={20} height={20} alt="Logo 08" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute translate-x-[292px] opacity-40">
+                    <div className="animate-[breath_6s_ease-in-out_4s_infinite_both]">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200/60 bg-white shadow-lg">
+                        <a href="https://hrt.mahiro.uk" target="_blank" rel="noopener noreferrer">
+                          <Image className="relative" src={Logo09} width={21} height={13} alt="Logo 09" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </article>
               </div>
             </div>
 
-            <div className="relative flex flex-col">
-              <article className="flex h-full w-full items-center justify-center focus-visible:outline-hidden focus-visible:ring-3 focus-visible:ring-indigo-300">
-                <div className="absolute -translate-x-[136px]">
-                  <div className="animate-[breath_7s_ease-in-out_3s_infinite_both]">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                      <a href="https://github.com/Trans-Prism/Trans-Prism" target="_blank" rel="noopener noreferrer">
-                        <Image className="relative" src={Logo02} width={23} height={22} alt="Logo 02" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute translate-x-[136px]">
-                  <div className="animate-[breath_7s_ease-in-out_3.5s_infinite_both]">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                      <a href="https://creativecommons.org" target="_blank" rel="noopener noreferrer">
-                        <Image className="relative" src={Logo03} width={22} height={22} alt="Logo 03" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute -translate-x-[216px] -translate-y-[82px]">
-                  <div className="animate-[breath_6s_ease-in-out_3.5s_infinite_both]">
-                    <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                      <a href="https://flutter.dev" target="_blank" rel="noopener noreferrer">
-                        <Image className="relative" src={Logo04} width={24} height={22} alt="Logo 04" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute -translate-y-[82px] translate-x-[216px]">
-                  <div className="animate-[breath_6s_ease-in-out_1.5s_infinite_both]">
-                    <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                      <a href="https://mtf.wiki" target="_blank" rel="noopener noreferrer">
-                        <Image className="relative" src={Logo05} width={25} height={25} alt="Logo 05" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute translate-x-[216px] translate-y-[82px]">
-                  <div className="animate-[breath_6s_ease-in-out_2s_infinite_both]">
-                    <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                      <span className="text-2xl leading-none">🏳️‍⚧️</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute -translate-x-[216px] translate-y-[82px]">
-                  <div className="animate-[breath_6s_ease-in-out_2.5s_infinite_both]">
-                    <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
-                      <a href="https://dart.dev" target="_blank" rel="noopener noreferrer">
-                        <Image className="relative" src={Logo07} width={25} height={25} alt="Logo 07" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute -translate-x-[292px] opacity-40">
-                  <div className="animate-[breath_6s_ease-in-out_2s_infinite_both]">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200/60 bg-white shadow-lg">
-                      <a href="https://www.cloudflare.com" target="_blank" rel="noopener noreferrer">
-                        <Image className="relative" src={Logo08} width={20} height={20} alt="Logo 08" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute translate-x-[292px] opacity-40">
-                  <div className="animate-[breath_6s_ease-in-out_4s_infinite_both]">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200/60 bg-white shadow-lg">
-                      <a href="https://hrt.mahiro.uk" target="_blank" rel="noopener noreferrer">
-                        <Image className="relative" src={Logo09} width={21} height={13} alt="Logo 09" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </article>
+            {/* ---- 移动端：流式徽标网格 ---- */}
+            <div className="flex flex-wrap items-center justify-center gap-4 md:hidden">
+              <a href="https://github.com/Trans-Prism/Trans-Prism" target="_blank" rel="noopener noreferrer"
+                className="flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-md shadow-black/[0.05] transition-transform hover:scale-110">
+                <Image src={Logo02} width={22} height={22} alt="GitHub" />
+              </a>
+              <a href="https://creativecommons.org" target="_blank" rel="noopener noreferrer"
+                className="flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-md shadow-black/[0.05] transition-transform hover:scale-110">
+                <Image src={Logo03} width={22} height={22} alt="CC" />
+              </a>
+              <a href="https://flutter.dev" target="_blank" rel="noopener noreferrer"
+                className="flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-md shadow-black/[0.05] transition-transform hover:scale-110">
+                <Image src={Logo04} width={22} height={22} alt="Flutter" />
+              </a>
+              <a href="https://mtf.wiki" target="_blank" rel="noopener noreferrer"
+                className="flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-md shadow-black/[0.05] transition-transform hover:scale-110">
+                <Image src={Logo05} width={22} height={22} alt="MtF.wiki" />
+              </a>
+              <span className="flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-md shadow-black/[0.05] text-lg">
+                🏳️‍⚧️
+              </span>
+              <a href="https://dart.dev" target="_blank" rel="noopener noreferrer"
+                className="flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-md shadow-black/[0.05] transition-transform hover:scale-110">
+                <Image src={Logo07} width={22} height={22} alt="Dart" />
+              </a>
+              <a href="https://www.cloudflare.com" target="_blank" rel="noopener noreferrer"
+                className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200/60 bg-white shadow-md transition-transform hover:scale-110">
+                <Image src={Logo08} width={18} height={18} alt="Cloudflare" />
+              </a>
+              <a href="https://hrt.mahiro.uk" target="_blank" rel="noopener noreferrer"
+                className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200/60 bg-white shadow-md transition-transform hover:scale-110">
+                <Image src={Logo09} width={18} height={12} alt="HRT" />
+              </a>
             </div>
           </div>
         </div>

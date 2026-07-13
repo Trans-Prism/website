@@ -28,12 +28,12 @@ export default function Header() {
           </div>
 
           {/* Right side: GitHub icon + Download button */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4">
             <a
               href="https://github.com/Trans-Prism/Trans-Prism"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 transition-opacity hover:text-gray-900"
+              className="text-gray-500 transition-opacity hover:text-gray-900 shrink-0"
               aria-label="GitHub"
             >
               <svg
@@ -48,11 +48,11 @@ export default function Header() {
 
             <Link
               href="/download"
-              className="inline-flex items-center gap-1.5 rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-blue-700 hover:shadow-md active:scale-95"
+              className="inline-flex items-center gap-1.5 rounded-full border border-blue-300/25 bg-blue-500/85 px-3 py-1.5 text-xs font-semibold text-white shadow-lg shadow-blue-500/20 backdrop-blur-2xl transition-all duration-300 hover:bg-blue-400/85 hover:shadow-xl active:scale-95 sm:px-4 sm:py-2 sm:text-sm"
             >
               {/* Download icon */}
               <svg
-                className="h-4 w-4"
+                className="h-3.5 w-3.5 sm:h-4 sm:w-4"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -64,7 +64,8 @@ export default function Header() {
                 <polyline points="7 10 12 15 17 10" />
                 <line x1="12" y1="15" x2="12" y2="3" />
               </svg>
-              下载 Android 版
+              <span className="hidden sm:inline">下载 Android 版</span>
+              <span className="sm:hidden">下载</span>
             </Link>
           </div>
         </div>

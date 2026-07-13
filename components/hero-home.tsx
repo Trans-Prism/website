@@ -9,11 +9,11 @@ import PageIllustration from "@/components/page-illustration";
    ================================================================ */
 function PhoneFrame({ children }: { children: React.ReactNode }) {
   return (
-    <div className="relative h-[600px] w-[280px] shrink-0 overflow-hidden rounded-[3rem] border-[8px] border-gray-900 bg-gray-50 shadow-2xl">
+    <div className="relative h-[500px] w-[240px] shrink-0 overflow-hidden rounded-[2.5rem] border-[6px] border-gray-900 bg-gray-50 shadow-2xl md:h-[600px] md:w-[280px] md:rounded-[3rem] md:border-[8px]">
       {/* 灵动岛 — 精致药丸挖孔 */}
-      <div className="absolute left-1/2 top-3 z-50 h-6 w-24 -translate-x-1/2 rounded-full bg-gray-900" />
-      {/* 内部安全区容器：pt-[14px] 略微避开灵动岛 */}
-      <div className="absolute inset-0 overflow-hidden pt-[14px]">
+      <div className="absolute left-1/2 top-2 z-50 h-5 w-20 -translate-x-1/2 rounded-full bg-gray-900 md:top-3 md:h-6 md:w-24" />
+      {/* 内部安全区容器：略微避开灵动岛 */}
+      <div className="absolute inset-0 overflow-hidden pt-[10px] md:pt-[14px]">
         {children}
       </div>
     </div>
@@ -32,7 +32,7 @@ function Screenshot({ src }: { src: string }) {
         alt="screenshot"
         fill
         className="object-cover"
-        sizes="280px"
+        sizes="(max-width: 768px) 240px, 280px"
       />
     </div>
   );
@@ -158,6 +158,22 @@ function AnimatedPhoneContent({
    ================================================================ */
 export default function HeroHome() {
   const [activeIndex, setActiveIndex] = useState(1);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  /* 挂载后水平滚动到中间手机（index=1），不影响页面垂直位置 */
+  useEffect(() => {
+    if (!scrollRef.current) return;
+    const container = scrollRef.current;
+    const centerPhone = container.children[1] as HTMLElement;
+    if (centerPhone) {
+      requestAnimationFrame(() => {
+        const containerWidth = container.getBoundingClientRect().width;
+        const phoneWidth = centerPhone.getBoundingClientRect().width;
+        // 滚动到使中间手机居中的位置
+        container.scrollLeft = centerPhone.offsetLeft - (containerWidth - phoneWidth) / 2;
+      });
+    }
+  }, []);
 
   /* 三台手机的配置数据 */
   const phoneSlots = [
@@ -203,22 +219,24 @@ export default function HeroHome() {
     <section className="relative">
       <PageIllustration />
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="pb-32 pt-32 md:pb-40 md:pt-40">
+        <div className="pb-20 pt-24 md:pb-40 md:pt-40">
           {/* 标题 */}
-          <div className="pb-16 text-center md:pb-20">
-            <h1 className="mb-6 border-y text-5xl font-bold [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] md:text-6xl">
+          <div className="pb-10 text-center md:pb-16">
+            <h1 className="mb-4 border-y text-4xl font-bold [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] md:mb-6 md:text-5xl lg:text-6xl">
               Trans Prism
             </h1>
             <div className="mx-auto max-w-3xl">
-              <p className="mb-8 text-lg text-gray-700">
+              <p className="mb-6 text-base text-gray-700 md:mb-8 md:text-lg">
                 跨性别工具箱 · 安全 · 离线 · 开源
               </p>
             </div>
           </div>
 
           {/* 三机位 — 悬停聚焦交互 */}
+          {/* 移动端横向滚动，桌面端居中排列 */}
           <div
-            className="flex flex-col items-center gap-8 md:flex-row md:justify-center md:gap-8"
+            ref={scrollRef}
+            className="flex items-start gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide md:flex-row md:justify-center md:gap-8 md:overflow-visible md:pb-0"
             onMouseLeave={() => setActiveIndex(1)}
           >
             {phoneSlots.map(({ index, content }) => {
@@ -227,7 +245,8 @@ export default function HeroHome() {
                 <div
                   key={index}
                   className={[
-                    "shrink-0 transition-all duration-500 ease-out",
+                    "shrink-0 snap-center first:ml-[calc(50%-120px)] last:mr-[calc(50%-120px)] md:first:ml-0 md:last:mr-0",
+                    "transition-all duration-500 ease-out",
                     isActive
                       ? "z-20 md:scale-105 md:opacity-100"
                       : "z-10 md:scale-90 md:opacity-40 md:translate-y-4 md:grayscale md:blur-[1px]",
