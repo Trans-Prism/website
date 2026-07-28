@@ -65,6 +65,16 @@ export default function Footer({ border = false }: { border?: boolean }) {
                   TransCircle
                 </Link>
               </li>
+              <li>
+                <Link className="text-gray-600 transition hover:text-gray-900" href="https://testflight.apple.com/join/SPGZysjK" target="_blank" rel="noopener noreferrer">
+                  Oyama-Trancker
+                </Link>
+              </li>
+              <li>
+                <Link className="text-gray-600 transition hover:text-gray-900" href="https://hrt.mahiro.uk/" target="_blank" rel="noopener noreferrer">
+                  Journey
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -73,7 +83,12 @@ export default function Footer({ border = false }: { border?: boolean }) {
             <h3 className="text-sm font-medium text-gray-800">关于</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link className="text-gray-600 transition hover:text-gray-900" href="https://github.com/Trans-Prism/Trans-Prism/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">
+                <Link className="text-gray-600 transition hover:text-gray-900" href="/usage-notice">
+                  使用须知
+                </Link>
+              </li>
+              <li>
+                <Link className="text-gray-600 transition hover:text-gray-900" href="/license">
                   开源协议
                 </Link>
               </li>

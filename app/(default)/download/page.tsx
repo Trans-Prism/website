@@ -142,6 +142,30 @@ export default function DownloadPage() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="py-12 md:py-20">
           {/* ================================================================
+              返回按钮
+               ================================================================ */}
+          <div className="mb-6 md:mb-8">
+            <Link
+              href="/"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-gray-500 transition-all duration-200 hover:text-gray-900 group"
+            >
+              <svg
+                className="h-4 w-4 transition-transform duration-200 group-hover:-translate-x-0.5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M19 12H5" />
+                <polyline points="12 19 5 12 12 5" />
+              </svg>
+              <span>返回首页</span>
+            </Link>
+          </div>
+
+          {/* ================================================================
               页面标题
                ================================================================ */}
           <div className="mx-auto mb-10 max-w-3xl text-center md:mb-16">
