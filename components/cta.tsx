@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Stripes from "@/public/images/stripes-dark.svg";
 
 export default function Cta() {
@@ -31,12 +32,12 @@ export default function Cta() {
           </div>
           <div className="px-4 py-10 md:px-12 md:py-20">
             <h2 className="mb-4 border-y text-2xl font-bold text-gray-200 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-700/.7),transparent)1] md:mb-12 md:text-4xl">
-              夺回你的数据控制权
+              你的数据，只属于你
             </h2>
             <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
-              <a
+              <Link
                 className="btn group mb-4 w-full rounded-full border border-blue-300/25 bg-blue-500/85 px-8 py-3 text-white shadow-lg shadow-blue-500/20 backdrop-blur-2xl transition-all duration-300 hover:bg-blue-400/85 hover:shadow-xl hover:shadow-blue-400/30 active:scale-[0.97] sm:mb-0 sm:w-auto"
-                href="#0"
+                href="/download"
               >
                 <span className="relative inline-flex items-center gap-2">
                   获取 Android 版
@@ -46,7 +47,7 @@ export default function Cta() {
                     </svg>
                   </span>
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
