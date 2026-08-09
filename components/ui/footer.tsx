@@ -14,8 +14,12 @@ export default function Footer({ border = false }: { border?: boolean }) {
             <div>
               <Logo />
             </div>
-            <div className="text-sm text-gray-600">
-              &copy; 2026 Trans Prism. 开源且自由。
+            <div className="space-y-1 text-sm text-gray-600">
+              <p>&copy; 2026 Trans Prism. 开源且自由。</p>
+              <p className="text-xs text-gray-400">May you find your steady state.</p>
+              <p className="pt-1 text-xs leading-5 text-gray-400">
+                跨ICP备20260522号 · 🏳️‍⚧️猫公网安备 52013142026522号
+              </p>
             </div>
           </div>
 
@@ -125,14 +129,6 @@ export default function Footer({ border = false }: { border?: boolean }) {
         </div>
       </div>
 
-      {/* Bottom bar */}
-      <div className="border-t border-gray-100">
-        <div className="mx-auto max-w-6xl px-4 py-4 sm:px-6">
-          <p className="text-center text-xs text-gray-400">
-            May you find your steady state.
-          </p>
-        </div>
-      </div>
     </footer>
   );
 }
