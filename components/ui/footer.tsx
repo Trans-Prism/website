@@ -18,7 +18,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <p>&copy; 2026 Trans Prism. 开源且自由。</p>
               <p className="text-xs text-gray-400">May you find your steady state.</p>
               <p className="pt-1 text-xs leading-5 text-gray-400">
-                跨ICP备20260522号 · 🏳️‍⚧️猫公网安备 52013142026522号
+                <Link href="/icp" className="transition hover:text-gray-600">🏳️‍⚧️跨ICP备20260522号</Link>
               </p>
             </div>
           </div>
