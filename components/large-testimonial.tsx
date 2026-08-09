@@ -41,7 +41,7 @@ export default function LargeTestimonial() {
             <div className="text-sm font-medium text-gray-400">
               <span className="text-gray-300">开发者</span>{" "}
               <span className="text-gray-500">/</span>{" "}
-              <span className="text-blue-400">Trans Prism 维护者</span>
+              <span className="text-blue-400">Trans Prism 维护者（bushi，⬆️AI写的，太中二了）</span>
             </div>
           </div>
         </div>
