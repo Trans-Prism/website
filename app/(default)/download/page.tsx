@@ -213,7 +213,7 @@ export default function DownloadPage() {
                           return (
                             <div key={asset.name} className="flex w-full gap-2 sm:flex-1">
                               <a
-                                href={`https://downloads.chengxi.online/app/releases/${latest.tag_name}/${asset.name}`}
+                                href={`https://downloads.chengxi.moe/app/releases/${latest.tag_name}/${asset.name}`}
                                 className="btn group flex-1 rounded-full border border-blue-300/25 bg-blue-500/85 px-6 py-3 text-sm text-white shadow-lg shadow-blue-500/20 backdrop-blur-2xl transition-all duration-300 hover:bg-blue-400/85 hover:shadow-xl active:scale-[0.97]"
                               >
                                 <span className="relative inline-flex flex-col items-center px-1">
@@ -225,7 +225,7 @@ export default function DownloadPage() {
                               </a>
                               {sha256Asset && (
                                 <a
-                                  href={`https://downloads.chengxi.online/app/releases/${latest.tag_name}/${sha256Asset.name}`}
+                                  href={`https://downloads.chengxi.moe/app/releases/${latest.tag_name}/${sha256Asset.name}`}
                                   className="btn shrink-0 px-2 bg-gray-100 text-gray-600 hover:bg-gray-200 border border-gray-200 transition-colors text-xs"
                                   title="下载 SHA-256 校验文件"
                                 >
@@ -348,14 +348,14 @@ export default function DownloadPage() {
                             return (
                               <div key={asset.name} className="flex gap-2">
                                 <a
-                                  href={`https://downloads.chengxi.online/app/releases/${release.tag_name}/${asset.name}`}
+                                  href={`https://downloads.chengxi.moe/app/releases/${release.tag_name}/${asset.name}`}
                                   className="flex-1 inline-flex items-center justify-center gap-1.5 rounded-lg bg-blue-50 border border-blue-100 px-3 py-2 text-sm font-medium text-blue-600 transition hover:bg-blue-100"
                                 >
                                   下载 ({formatSize(asset.size)})
                                 </a>
                                 {sha256Asset && (
                                   <a
-                                    href={`https://downloads.chengxi.online/app/releases/${release.tag_name}/${sha256Asset.name}`}
+                                    href={`https://downloads.chengxi.moe/app/releases/${release.tag_name}/${sha256Asset.name}`}
                                     className="inline-flex items-center justify-center rounded-lg bg-gray-50 border border-gray-200 px-2 py-2 text-xs font-medium text-gray-500 transition hover:bg-gray-100"
                                     title="下载 SHA-256 校验文件"
                                   >

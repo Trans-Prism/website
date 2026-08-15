@@ -1,9 +1,9 @@
 {
 	"mcpServers": {
 		"local_knowledge_base": {
-			"command": "python",
+			"command": "/Users/wenle/Developer/Workspace/Trans_Prism/rag-system/.venv/bin/python3",
 			"args": [
-				"/Users/wenle/Desktop/Workspace/Trans_Prism/mcp_bridge_bge.py"
+				"/Users/wenle/Developer/Workspace/Trans_Prism/rag-system/mcp_bridge_bge.py"
 			],
 			"env": {},
 			"disabled": false,
