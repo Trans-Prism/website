@@ -128,6 +128,6 @@ Trans Prism 致力于为跨性别社群打造安全、可信赖的日常工具�
 官网使用 [Next.js](https://nextjs.org/) 构建，托管于 Cloudflare。
 
 **主仓库：** [github.com/Trans-Prism/Trans-Prism](https://github.com/Trans-Prism/Trans-Prism)  
-**官网地址：** [transprism.chengxi.online](https://transprism.chengxi.online)
+**官网地址：** [transprism.chengxi.moe](https://transprism.chengxi.moe)
 
 > May you find your steady state.
