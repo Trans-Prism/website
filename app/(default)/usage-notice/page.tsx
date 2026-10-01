@@ -91,7 +91,7 @@ export default function UsageNoticePage() {
 
               <div className="mt-6 rounded-lg bg-blue-50 border border-blue-100 p-4">
                 <p className="text-sm text-blue-800 font-medium">
-                  🛡️ 核心隐私保障：你所有极其隐私的生理数据（用药记录、血药浓度、嗓音训练参数等）<strong>绝不离开设备</strong>，仅存储在本地 <code className="rounded bg-blue-100 px-1.5 py-0.5 text-xs font-mono">SharedPreferences</code>。
+                  🛡️ 核心隐私保障：你的个人生理数据（用药记录、血药浓度等）<strong>绝不离开设备</strong>，仅存储在本地。
                 </p>
               </div>
             </div>
@@ -204,8 +204,10 @@ export default function UsageNoticePage() {
                     {[
                       ["原创客户端代码", "Apache License 2.0"],
                       ["PK 计算引擎（Oyama）", "MIT License"],
-                      ["嗓音训练模块（VFS Tracker）", "CC BY-NC-SA 4.0"],
-                      ["内置知识库文本", "CC BY-SA 4.0 / CC BY-ND 4.0"],
+                      ["内置知识库文本（独立模块）", "CC BY-SA 4.0 / CC BY-ND 4.0"],
+                      ["vitepress-theme-project-trans（知识库主题）", "MIT License"],
+                      ["Trans-Prism-Builder 流水线脚本", "Apache License 2.0"],
+                      ["第三方依赖", "各自许可"],
                     ].map(([component, license]) => (
                       <tr key={component}>
                         <td className="px-4 py-2.5 font-medium text-gray-800">{component}</td>
@@ -216,6 +218,11 @@ export default function UsageNoticePage() {
                 </table>
               </div>
               <p className="mt-4 text-sm text-gray-500">
+                知识库内容作为<strong>独立于主程序的模块</strong>随 App 提供，按 CC BY-SA 4.0
+                / CC BY-ND 4.0 分发；本项目已就内置知识库内容取得 Project Trans 与
+                MioMtFWiki 的授权。
+              </p>
+              <p className="mt-2 text-sm text-gray-500">
                 详见{' '}
                 <a
                   href="https://github.com/Trans-Prism/Trans-Prism/blob/main/LICENSE"
@@ -224,7 +231,15 @@ export default function UsageNoticePage() {
                   className="text-blue-600 underline underline-offset-2 hover:text-blue-700"
                 >
                   Trans-Prism/LICENSE
-                </a>。
+                </a>
+                ，完整映射表见{' '}
+                <a
+                  href="/license"
+                  className="text-blue-600 underline underline-offset-2 hover:text-blue-700"
+                >
+                  开源许可
+                </a>
+                页。
               </p>
             </div>
 

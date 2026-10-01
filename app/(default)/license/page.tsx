@@ -2,22 +2,20 @@ import Link from "next/link";
 
 export const metadata = {
   title: "开源许可 — Trans Prism",
-  description: "Trans Prism 复合开源许可证 —— Apache 2.0, MIT, CC BY-SA 4.0, CC BY-NC-SA 4.0, CC BY-ND 4.0, LGPL-3.0",
+  description: "Trans Prism 复合开源许可证 —— Apache 2.0, MIT, CC BY-SA 4.0, CC BY-ND 4.0",
 };
 
 const licenseData = [
   { id: 1, component: "原创客户端代码\n(Flutter/Dart 源码, lib/)", license: "Apache License 2.0", category: "代码" },
   { id: 2, component: "PK 计算引擎\n(PK Simulator, 衍生自 Oyama)", license: "MIT License", category: "算法" },
-  { id: 3, component: "嗓音训练模块\n(Voice Training, 衍生自 VFS Tracker)", license: "CC BY-NC-SA 4.0", category: "代码/算法" },
-  { id: "4a", component: "MtF.Wiki 知识库内容\n(Project Trans 系)", license: "CC BY-SA 4.0", category: "内容" },
-  { id: "4b", component: "FtM.Wiki 知识库内容\n(Project Trans 系)", license: "CC BY-SA 4.0", category: "内容" },
-  { id: "4c", component: "RLE.Wiki 知识库内容\n(Project Trans 系)", license: "CC BY-SA 4.0", category: "内容" },
-  { id: "4d", component: "MioMtFWiki 知识库内容\n(社区驱动项目)", license: "CC BY-ND 4.0", category: "内容" },
-  { id: 5, component: "激素换算器 & 罩杯计算器\n(衍生自 MtF.wiki 及网络公开资料)", license: "CC BY-SA 4.0", category: "算法/内容" },
-  { id: 6, component: "SVG 图解资源库\n(Twemoji / OpenMoji / Noto Emoji 风格)", license: "各自保留\n(CC-BY / Apache 2.0 / SIL OFL 等)", category: "资源" },
-  { id: 7, component: "2345.LGBT 导航页源码\n(衍生自 Project Trans)", license: "LGPL-3.0", category: "代码" },
-  { id: 8, component: "Trans-Prism-Builder 流水线脚本\n(Python 工具链, CI Workflows)", license: "Apache License 2.0", category: "代码" },
-  { id: 9, component: "第三方 Dart/Flutter 依赖包\n(见 pubspec.yaml)", license: "各自许可\n(MIT / BSD / Apache 2.0 等)", category: "依赖" },
+  { id: "3a", component: "MtF.Wiki 知识库内容\n(Project Trans 系)", license: "CC BY-SA 4.0", category: "内容" },
+  { id: "3b", component: "FtM.Wiki 知识库内容\n(Project Trans 系)", license: "CC BY-SA 4.0", category: "内容" },
+  { id: "3c", component: "RLE.Wiki 知识库内容\n(Project Trans 系)", license: "CC BY-SA 4.0", category: "内容" },
+  { id: "3d", component: "MioMtFWiki 知识库内容\n(社区驱动项目)", license: "CC BY-ND 4.0", category: "内容" },
+  { id: 4, component: "SVG 图解资源库\n(Twemoji / OpenMoji / Noto Emoji 风格)", license: "各自保留\n(CC-BY / Apache 2.0 / SIL OFL 等)", category: "资源" },
+  { id: 5, component: "vitepress-theme-project-trans\n(Project Trans 官方知识库主题)", license: "MIT License", category: "代码" },
+  { id: 6, component: "Trans-Prism-Builder 流水线脚本\n(Python 工具链, CI Workflows)", license: "Apache License 2.0", category: "代码" },
+  { id: 7, component: "第三方 Dart/Flutter 依赖包\n(见 pubspec.yaml)", license: "各自许可\n(MIT / BSD / Apache 2.0 等)", category: "依赖" },
 ];
 
 export default function LicensePage() {
@@ -187,7 +185,7 @@ export default function LicensePage() {
             {/* MIT License */}
             <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm md:p-8">
               <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-purple-50 px-3 py-1 text-xs font-medium text-purple-700">
-                组件 2 · PK 计算引擎
+                组件 2 · PK 计算引擎 / 组件 5 · vitepress-theme-project-trans
               </div>
               <h2 className="mb-4 text-xl font-bold text-gray-900 md:text-2xl">
                 MIT License
@@ -198,11 +196,17 @@ export default function LicensePage() {
                 {' '}及{' '}
                 <a href="https://github.com/LaoZhong-Mihari/HRT-Recorder-online" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2 hover:text-blue-700">HRT-Recorder-online</a>。
               </p>
+              <p className="mb-4 text-sm text-gray-600 leading-relaxed">
+                vitepress-theme-project-trans 是 Project Trans 官方的 VitePress 主题{' '}
+                <a href="https://github.com/project-trans/vitepress-theme-project-trans" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2 hover:text-blue-700">@project-trans/vitepress-theme-project-trans</a>
+                （MIT License, Copyright (c) 2024 Project Trans）。
+              </p>
               <div className="rounded-lg bg-gray-50 border border-gray-100 p-4 text-xs font-mono text-gray-600 leading-relaxed md:p-6">
                 <pre className="whitespace-pre-wrap">
 {`MIT License
 
 Copyright (c) [Oyama's HRT Recorder Contributors]
+Copyright (c) 2024 Project Trans (vitepress-theme-project-trans)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -231,41 +235,17 @@ SOFTWARE.`}
                 Creative Commons 系列许可
               </h2>
               <div className="space-y-6">
-                {/* CC BY-NC-SA 4.0 */}
-                <div className="rounded-lg border border-amber-200 bg-amber-50/50 p-4 md:p-5">
-                  <div className="mb-2 inline-flex items-center gap-2 rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-700">
-                    组件 3 · 嗓音训练模块
-                  </div>
-                  <h3 className="mb-2 text-sm font-semibold text-gray-900">CC BY-NC-SA 4.0</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    嗓音训练模块衍生自{' '}
-                    <a href="https://github.com/Ethanlita/vfs-tracker" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2 hover:text-blue-700">VFS Tracker</a>，
-                    仅允许<strong>非商业性使用</strong>。
-                  </p>
-                  <ul className="mt-3 space-y-1.5 text-sm text-gray-600">
-                    <li className="flex items-start gap-2">
-                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500" />
-                      <span><strong>署名</strong>：必须标注原始作者与 VFS Tracker 项目链接</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500" />
-                      <span><strong>非商业性</strong>：不得用于商业目的</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500" />
-                      <span><strong>相同方式共享</strong>：修改后须以相同许可分发</span>
-                    </li>
-                  </ul>
-                </div>
-
                 {/* CC BY-SA 4.0 */}
                 <div className="rounded-lg border border-blue-200 bg-blue-50/50 p-4 md:p-5">
                   <div className="mb-2 inline-flex items-center gap-2 rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-700">
-                    组件 4a/4b/4c/5 · Project Trans 系知识库 & 衍生算法
+                    组件 3a/3b/3c · Project Trans 系知识库
                   </div>
                   <h3 className="mb-2 text-sm font-semibold text-gray-900">CC BY-SA 4.0</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    MtF.Wiki、FtM.Wiki、RLE.Wiki 知识库内容，以及衍生算法，遵循 CC BY-SA 4.0。
+                    MtF.Wiki、FtM.Wiki、RLE.Wiki 知识库内容遵循 CC BY-SA 4.0。
+                  </p>
+                  <p className="mt-2 text-sm text-gray-600 leading-relaxed">
+                    知识库内容作为<strong>独立于主程序的模块</strong>随 App 提供，与 Apache-2.0 的原创客户端代码在分发上明确区分，不并入 lib/ 原创代码，也不改变原创代码的许可条款；该模块自身即按 CC BY-SA 4.0 分发，满足 ShareAlike 要求。本项目已就内置知识库内容取得 Project Trans 的授权。
                   </p>
                   <ul className="mt-3 space-y-1.5 text-sm text-gray-600">
                     <li className="flex items-start gap-2">
@@ -282,9 +262,12 @@ SOFTWARE.`}
                 {/* CC BY-ND 4.0 */}
                 <div className="rounded-lg border border-red-200 bg-red-50/50 p-4 md:p-5">
                   <div className="mb-2 inline-flex items-center gap-2 rounded-full bg-red-100 px-2.5 py-0.5 text-xs font-medium text-red-700">
-                    组件 4d · MioMtFWiki 知识库内容
+                    组件 3d · MioMtFWiki 知识库内容
                   </div>
                   <h3 className="mb-2 text-sm font-semibold text-gray-900">CC BY-ND 4.0</h3>
+                  <p className="mb-3 text-sm text-gray-600 leading-relaxed">
+                    与 3a/3b/3c 相同，MioMtFWiki 内容同样作为独立模块随 App 提供，不与 Apache-2.0 原创代码混合授权。本项目已就该内容取得项目作者的授权。
+                  </p>
                   <div className="grid gap-3 sm:grid-cols-2">
                     <div className="rounded-lg border border-green-200 bg-green-50 p-3">
                       <p className="text-xs font-semibold text-green-700 mb-1">✅ 允许</p>
@@ -317,8 +300,7 @@ SOFTWARE.`}
                 <div className="rounded-lg border border-gray-100 bg-gray-50 p-4">
                   <h3 className="mb-2 text-sm font-semibold text-gray-900">商业使用提醒</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    原创客户端代码（Apache 2.0）允许商业使用。嗓音训练模块（CC BY-NC-SA 4.0）<strong>禁止</strong>商业使用。
-                    您有责任自行评估并遵守所有适用的上游许可条款。
+                    原创客户端代码（Apache 2.0）允许商业使用。您有责任自行评估并遵守所有适用的上游许可条款。
                   </p>
                 </div>
 
@@ -342,15 +324,24 @@ SOFTWARE.`}
                   <p className="text-sm text-gray-600 leading-relaxed">
                     &ldquo;Trans Prism&rdquo; 名称与项目标识（Logo）不属于开源许可的授权范围。
                   </p>
+                  <p className="mt-2 text-sm text-gray-600 leading-relaxed">
+                    Trans Prism is open-source software licensed under Apache License 2.0.
+                    The Trans Prism name, logo, and other branding are not licensed under
+                    Apache License 2.0.
+                  </p>
                 </div>
 
                 <div className="rounded-lg border border-gray-100 bg-gray-50 p-4">
                   <h3 className="mb-2 text-sm font-semibold text-gray-900">上游项目致谢</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
                     本项目建立在以下开源项目的基础上：Project Trans (MtF.Wiki, FtM.Wiki, RLE.Wiki),
+                    Project Trans (vitepress-theme-project-trans),
                     KitsuMio (MioMtFWiki), SmirnovaOyama (Oyama's HRT Recorder),
-                    LaoZhong-Mihari (HRT-Recorder-online), Ethanlita (VFS Tracker),
+                    LaoZhong-Mihari (HRT-Recorder-online),
                     Twitter/Twemoji, OpenMoji, Google/Noto Emoji。
+                  </p>
+                  <p className="mt-2 text-sm text-gray-600 leading-relaxed">
+                    其中 Project Trans 与 MioMtFWiki 已就本项目内置知识库内容给予授权，特此致谢。
                   </p>
                 </div>
               </div>
@@ -367,8 +358,6 @@ SOFTWARE.`}
                   ["MIT License", "https://opensource.org/licenses/MIT"],
                   ["CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0/legalcode.zh-hans"],
                   ["CC BY-ND 4.0", "https://creativecommons.org/licenses/by-nd/4.0/legalcode.zh-hans"],
-                  ["CC BY-NC-SA 4.0", "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.zh-hans"],
-                  ["LGPL-3.0", "https://www.gnu.org/licenses/lgpl-3.0.html"],
                 ].map(([name, url]) => (
                   <li key={name}>
                     <a href={url} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2 hover:text-blue-700">
